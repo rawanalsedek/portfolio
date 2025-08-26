@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1E293B;
+  color: #E2E8F0;
+  line-height: 1.6;
+}
+
+header {
+  background: #0f172a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.logo {
+  color: #06B6D4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: #E2E8F0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #06B6D4;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #E2E8F0;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 60px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./background.jpg') center/cover no-repeat;
+  opacity: 0.25;
+  z-index: -1;
+}
+.welcome {
+  font-size: 2.5rem;
+  animation: fadeInOut 6s infinite;
+}
+.welcome span {
+  color: #06B6D4;
+}
+.usp {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.about, .portfolio, .skills, .contact {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  color: #06B6D4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 20px;
+}
+.project {
+  background: #334155;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.project:hover { transform: translateY(-5px); }
+.project img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.project h3 { color: #06B6D4; }
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background: #06B6D4;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.project a:hover { background: #0891b2; }
+
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #334155;
+  border: 2px solid #06B6D4;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+.card h3 { color: #06B6D4; margin-bottom: 10px; }
+.card p, .card li { font-size: 0.95rem; }
+.card ul { padding-left: 20px; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  gap: 15px;
+  text-align: center;
+  margin-top: 15px;
+}
+.skill img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.skill p { font-size: 0.9rem; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.contact-form button {
+  background: #06B6D4;
+  border: none;
+  padding: 12px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-form button:hover { background: #0891b2; }
+.social-links { text-align: center; margin-top: 30px; }
+.social-links p { margin: 10px 0; }
+.social-links a { color: #06B6D4; text-decoration: none; }
+.social-links a:hover { text-decoration: underline; }
+
+footer {
+  background: #0f172a;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  color: #E2E8F0;
+  font-size: 0.9rem;
+  border-top: 1px solid #06B6D4;
+}
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-links {
+    flex-direction: column;
+    background: #0f172a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+    width: 200px;
+    padding: 15px;
+  }
+  .nav-links.show { display: flex; }
+}
