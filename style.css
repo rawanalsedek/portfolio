@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -339,4 +343,259 @@ footer {
 .work-card ul {
   margin-top: 10px;
   padding-left: 20px;
+}
+.about-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-view {
+  display: inline-block;
+  background: #06B6D4;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-view:hover {
+  background: #0891b2;
+}
+.skill-group {
+  margin-bottom: 15px;
+}
+
+.skill-group h4 {
+  color: #06B6D4;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.skill-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-group li {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+}
+
+.skill-logo {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+.soft-skills {
+  list-style: none;
+  padding: 0;
+}
+
+.soft-skills li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.soft-skills i {
+  color: #06B6D4;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.company-name {
+  font-size: 1.3rem;
+  color: #06B6D4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.job-title {
+  font-weight: bold;
+  color:#06B6D4 ;
+}
+.job-title i {
+  margin-right: 8px;
+  color: #06B6D4; 
+  font-size: 1rem;
+}
+
+
+.job-date {
+  font-size: 0.95rem;
+  color: #E2E8F0;
+}
+.services {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.services h2 {
+  color: #06B6D4;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #334155;
+  border: 2px solid #06B6D4;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-card h3 {
+  color: #06B6D4;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #E2E8F0;
+}
+.service-icon {
+  font-size: 2rem;
+  color: #06B6D4;
+  margin-bottom: 15px;
+}
+.tech-stack {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #E2E8F0;
+}
+
+.tech-stack strong {
+  color: #06B6D4;
+}
+
+.achievements {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.achievements h2 {
+  color: #06B6D4;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #334155;
+  border: 2px solid #06B6D4;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-text {
+  flex: 1;
+}
+
+.achievement-text h3 {
+  color: #06B6D4;
+  margin-bottom: 15px;
+}
+
+.achievement-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.achievement-image img {
+  width: 250px;
+  border-radius: 12px;
+  border: 3px solid #06B6D4;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .achievement-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.testimonials {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.testimonials h2 {
+  color: #06B6D4;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: #334155;
+  border: 2px solid #06B6D4;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #E2E8F0;
+  font-style: italic;
+}
+
+.client {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #06B6D4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
